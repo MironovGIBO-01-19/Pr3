@@ -1,0 +1,24 @@
+пакет  ru.mirea.gibo0119.pr3 ;
+
+import  java.util.Arrays ;
+
+public  class  Circle {
+
+частный  двойной радиус;
+
+public  double  getRadius () {
+        радиус возврата ;
+        }
+
+public  void  setRadius ( двойной  радиус ) {
+        это . радиус = радиус;
+        }
+
+public  double  getSquare ( двойной  радиус ) {
+        вернуть  Math . PI  *  Math . pow (радиус, 2 );
+        }
+
+public  double  getCircleLength ( двойной  радиус ) {
+        вернуть  Math . ПИ  * радиус *  2 ;
+        }
+        }
