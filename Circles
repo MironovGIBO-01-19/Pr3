@@ -1,0 +1,31 @@
+пакет  ru.mirea.gibo0119.pr3 ;
+
+import  java.util.Arrays ;
+
+public  class  Circles {
+    закрытые  круги Circle [];
+    частный  int circleCount = круги . длина;
+    public  Circle  getMaxCircle ( Circle [] круги ) {
+        Круг tempCircle = круги [ 0 ];
+        for ( int i =  1 ; i < circleCount; i ++ ) {
+            если (tempCircle . getSquare (tempCircle . getRadius ()) < круги [i] .
+                    getSquare (круги [i] . getRadius ())) {
+                tempCircle = круги [я];
+            }
+        }
+        return tempCircle;
+    }
+    public  Circle  getMinCircle ( Circle [] круги ) {
+        Круг tempCircle = круги [ 0 ];
+        for ( int i =  1 ; i < circleCount; i ++ ) {
+            если (tempCircle . getSquare (tempCircle . getRadius ()) > круги [i] .
+                    getSquare (круги [i] . getRadius ())) {
+                tempCircle = круги [я];
+            }
+        }
+        return tempCircle;
+    }
+    public  void  sort ( Круг [] круги ) {
+        Массивы . сортировка (кружочки);
+    }
+}
