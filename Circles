@@ -1,31 +1,31 @@
-пакет  ru.mirea.gibo0119.pr3 ;
+package ru.mirea.gibo0119.pr3;
 
-import  java.util.Arrays ;
+import java.util.Arrays;
 
-public  class  Circles {
-    закрытые  круги Circle [];
-    частный  int circleCount = круги . длина;
-    public  Circle  getMaxCircle ( Circle [] круги ) {
-        Круг tempCircle = круги [ 0 ];
-        for ( int i =  1 ; i < circleCount; i ++ ) {
-            если (tempCircle . getSquare (tempCircle . getRadius ()) < круги [i] .
-                    getSquare (круги [i] . getRadius ())) {
-                tempCircle = круги [я];
+public class Circles {
+    private Circle[] circles;
+    private int circleCount = circles.length;
+    public Circle getMaxCircle(Circle[] circles) {
+        Circle tempCircle = circles[0];
+        for (int i = 1; i < circleCount; i++) {
+            if (tempCircle.getSquare(tempCircle.getRadius()) < circles[i].
+                    getSquare(circles[i].getRadius())) {
+                tempCircle = circles[i];
             }
         }
         return tempCircle;
     }
-    public  Circle  getMinCircle ( Circle [] круги ) {
-        Круг tempCircle = круги [ 0 ];
-        for ( int i =  1 ; i < circleCount; i ++ ) {
-            если (tempCircle . getSquare (tempCircle . getRadius ()) > круги [i] .
-                    getSquare (круги [i] . getRadius ())) {
-                tempCircle = круги [я];
+    public Circle getMinCircle(Circle[] circles) {
+        Circle tempCircle = circles[0];
+        for (int i = 1; i < circleCount; i++) {
+            if (tempCircle.getSquare(tempCircle.getRadius()) > circles[i].
+                    getSquare(circles[i].getRadius())) {
+                tempCircle = circles[i];
             }
         }
         return tempCircle;
     }
-    public  void  sort ( Круг [] круги ) {
-        Массивы . сортировка (кружочки);
+    public void sort (Circle[] circles) {
+        Arrays.sort(circles);
     }
 }
